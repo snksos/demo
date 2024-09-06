@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM alpine
+FROM --platform=$TARGETPLATFORM alpine
 
 RUN apk update && apk add bash
 COPY ./hello.sh /
